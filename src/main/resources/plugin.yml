@@ -1,0 +1,25 @@
+name: EasyBroadcast
+version: '${project.version}'
+main: shreb.me.easybroadcast.EasyBroadcast
+api-version: 1.17
+authors: [ Shreb ]
+description: A simple plugin to broadcast messages to every player on a server
+commands:
+  eb:
+    description: can set the fadeIn, stay and fadeOut time in the config. Can also send a broadcast to all Players on the server.
+    usage: /<command> <send/fadein/stay/fadeout/editSubtitle/switchMode>
+    aliases: easybroadcast
+
+permissions:
+  EB.sendBC:
+    description: allows the Player to send Broadcasts using this plugin
+    default: op
+  EB.editConfig:
+    description: allows the Player to edit the config values of the plugin via command
+    default: op
+  EB.cancelTitleAll:
+    description: allows the Player to cancel Titles for all the players on the server
+    default: op
+  EB.cancelTitleSelf:
+    description: enables the Player to cancel their own title
+    default: true
